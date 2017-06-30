@@ -14,7 +14,7 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 app.use("/", routes);
 
-var db = "mongodb://localhost/react-quotes";
+var db = process.env.MONGODB_URI || "mongodb://localhost/react-quotes";
 
 
 
