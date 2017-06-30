@@ -14,7 +14,9 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 app.use("/", routes);
 
-var db = process.env.MONGODB_URI || "mongodb://localhost/React-Quotes";
+var db = "mongodb://localhost/react-quotes";
+
+
 
 // Connect mongoose to our database
 mongoose.connect(db, function(error) {

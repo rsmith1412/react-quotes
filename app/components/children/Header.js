@@ -1,4 +1,5 @@
 import React from "react";
+import { Link } from "react-router";
 
 // Helper Functi on
 import API from "../../utils/API.js";
@@ -16,22 +17,22 @@ class Header extends React.Component {
     render() {
 
         return (
-            <header id="masthead">
-                <div class="row">
-                <div class="container-fluid" id="header-container">
+            <header className="masthead">
+                <div className="row">
+                <div className="" id="header-container">
 
-                    <div class="col-xs-4 col-xs-offset-1" id="qApp">
-                        <h1>Quotes App</h1>
+                    <div className="col-lg-5" id="qApp">
+                        <h2>Quotes App</h2>
                     </div>
 
-                    <nav class="col-xs-5 col-xs-offset-2" id="nav">
+                    <nav className="container col-lg-5 col-lg-offset-2" id="nav">
 
-                        <div class="col-xs-3" id="home">
-                            <a href="/">Home</a>
+                        <div className="col-lg-offset-1 col-lg-3" id="home">
+                            <Link to="/">Home</Link>
                         </div>
                             
-                        <div class="col-xs-offset-1 col-xs-3" id="fav"> 
-                            <a href="/favorites">Favorites</a>
+                        <div className="col-lg-3" id="fav"> 
+                            <Link to="/favorites">Favorites</Link>
                         </div>
 
                     </nav>
