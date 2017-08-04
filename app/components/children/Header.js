@@ -25,7 +25,7 @@ class Header extends React.Component {
                         <h2>Quotes App</h2>
                     </div>
 
-                    <nav className="container col-lg-5 col-lg-offset-2" id="nav">
+                    <div className="container col-lg-5 col-lg-offset-2" id="nav">
 
                         <div className="col-lg-offset-1 col-lg-3" id="home">
                             <Link to="/">Home</Link>
@@ -35,7 +35,7 @@ class Header extends React.Component {
                             <Link to="/favorites">Favorites</Link>
                         </div>
 
-                    </nav>
+                    </div>
 
                 </div>  
                 </div>

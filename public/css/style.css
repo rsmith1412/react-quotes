@@ -103,6 +103,7 @@ footer {
   text-decoration: none;
   /*background: #4aaaa5;*/
   flex: 1;
+  padding-left: 30px;
 }
 
 .row {
@@ -113,8 +114,15 @@ footer {
 
 #home, #fav {
     flex: 1;
-    padding: 40px 0px 0px;
+    padding: 30px;
+    width: 30%;
+    display: inline-block;
 }
+
+/*#home {
+    
+
+}*/
 
 .container {
     /*margin: 0 20% 0 20%;*/
