@@ -6,7 +6,7 @@
   "scripts": {
     "dev": "webpack -w",
     "start": "node server.js",
-    "postinstall": "webpack -p"
+    "build": "babel server.js -o app.js"
   },
   "keywords": [],
   "author": "",
