@@ -1,7 +1,7 @@
 module.exports = {
 
   // This is the entry point or start of our react applicaton
-  entry: "./app/App.js",
+  entry: "./app/app.js",
 
   // The plain compiled Javascript will be output into this file
   output: {
