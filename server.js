@@ -6,7 +6,7 @@ var bodyParser = require("body-parser");
 var routes = require("./routes/routes");
 
 // Set up a default port, configure mongoose, configure our middleware
-var PORT = process.env.PORT || 3001;
+var PORT = process.env.PORT || 3000;
 mongoose.Promise = bluebird;
 var app = express();
 app.use(bodyParser.urlencoded({ extended: true }));
@@ -14,23 +14,20 @@ app.use(bodyParser.json());
 app.use(express.static(__dirname + "/public"));
 app.use("/", routes);
 
+
 var db = process.env.MONGODB_URI || "mongodb://localhost/react-quotes";
 
-
-
 // Connect mongoose to our database
-// mongoose.connect(db, function(error) {
-//   // Log any errors connecting with mongoose
-//   if (error) {
-//     console.error(error);
-//   }
-//   // Or log a success message
-//   else {
-//     console.log("mongoose connection is successful");
-//   }
-// });
-
-mongoose.connect("mongodb://heroku_jxb2f9ls:9btecsb6dachi2j0bsen9p7u4e@ds133340.mlab.com:33340/heroku_jxb2f9ls");
+mongoose.connect(db, function(error) {
+  // Log any errors connecting with mongoose
+  if (error) {
+    console.error(error);
+  }
+  // Or log a success message
+  else {
+    console.log("mongoose connection is successful");
+  }
+});
 
 // Start the server
 app.listen(PORT, function() {
