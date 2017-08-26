@@ -18,16 +18,18 @@ app.use("/", routes);
 var db = process.env.MONGODB_URI || "mongodb://localhost/react-quotes";
 
 // Connect mongoose to our database
-mongoose.connect(db, function(error) {
-  // Log any errors connecting with mongoose
-  if (error) {
-    console.error(error);
-  }
-  // Or log a success message
-  else {
-    console.log("mongoose connection is successful");
-  }
-});
+// mongoose.connect(db, function(error) {
+//   // Log any errors connecting with mongoose
+//   if (error) {
+//     console.error(error);
+//   }
+//   // Or log a success message
+//   else {
+//     console.log("mongoose connection is successful");
+//   }
+// });
+
+mongoose.connect("mongodb://robery:robery@ds133340.mlab.com:33340/heroku_jxb2f9ls");
 
 // Start the server
 app.listen(PORT, function() {

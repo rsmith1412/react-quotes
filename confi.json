@@ -1,0 +1,33 @@
+{
+  "development": {
+    "username": "root",
+    "password": "G00ner$25",
+    "database": "Typsy",
+    "host": "127.0.0.1",
+    "dialect": "mysql"
+  },
+  "test": {
+    "username": "b14e4be139080b",
+    "password": "8ce4d82c",
+    "database": "heroku_07077245f2b45a7",
+    "host": "us-cdbr-iron-east-03.cleardb.net",
+    "dialect": "mysql"
+  },
+  "production": {
+    "username": "b14e4be139080b",
+    "password": "8ce4d82c",
+    "database": "heroku_07077245f2b45a7",
+    "host": "us-cdbr-iron-east-03.cleardb.net",
+    "dialect": "mysql"
+  }
+}
+
+// {
+//   db: {
+//     production: "mongodb://robery:robery@ds133340.mlab.com:33340/heroku_jxb2f9ls",
+//     development: "mongodb://localhost:27017/React-Quotes",
+//     test: "mongodb://localhost:27017/React-Quotes",
+//   }
+// };
+
+// mongodb://heroku_jxb2f9ls:9btecsb6dachi2j0bsen9p7u4e@ds133340.mlab.com:33340/heroku_jxb2f9ls

@@ -1,0 +1,7 @@
+{
+    "domain": "https://react-quotes.herokuapp.com/",
+    "mongodb": {
+        "host": "robery:robery@ds133340.mlab.com",
+        "port": 33340
+    }
+}
